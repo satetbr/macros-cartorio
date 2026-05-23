@@ -42,4 +42,4 @@ O `GERADOR_XMLS.pmc` foi utilizado para gerar, em lote, todos os XMLs do sistema
 
 ## Exemplo visual
 
-![Pulover's Macro Creator](Screenshots/Screen_20260126093108.png)
+![Pulover's Macro Creator](https://github.com/user-attachments/assets/8faea574-645e-48cf-b872-9c8dda345330)
