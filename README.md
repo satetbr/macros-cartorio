@@ -40,6 +40,6 @@ O `GERADOR_XMLS.pmc` foi utilizado para gerar, em lote, todos os XMLs do sistema
 - As macros dependem do layout de tela, do foco da janela e do tempo de resposta do sistema. Ajuste atrasos e posições se o ambiente mudar.
 - O script `enviar_xml.ahk` usa caminhos absolutos para imagens e pasta de XML. Atualize `TargetFolder` e os caminhos de `ImageSearch` conforme o seu ambiente.
 
-## Exemplo visual
+## Imagens
 
 ![Pulover's Macro Creator](https://github.com/user-attachments/assets/8faea574-645e-48cf-b872-9c8dda345330)
