@@ -1,0 +1,129 @@
+﻿[PMC Globals]|None||
+[PMC Code v5.4.1]|F9||1|Window,2,Fast,0,1,Input,-1,-1,1|1|Macro1
+Context=None|
+Groups=Start:1
+1|IniRead|Contador, C:\Users\Maquina 32\Desktop\nascimento.ini, Progresso, QtdAtual, 1|1|0|IniRead|||||1|
+02|WinActivate||1|333|WinActivate||Natus|||2|
+03|WinMaximize||1|333|WinMaximize||Natus|||5|
+4|[Pause]||1|50|Sleep|||||7|
+5|Alt|{Alt}|1|5|Send|||||9|
+6|c|{c}|1|5|Send|||||11|
+7|e|{e}|1|5|Send|||||13|
+8|r|{r}|1|5|Send|||||15|
+9|c|{c}|1|5|Send|||||17|
+10|i|{i}|1|5|Send|||||19|
+11|WinWaitActive||1|333|WinWaitActive||Índice|||21|
+012|Space|{Space}|1|0|Send|||||23|
+13|e|{e}|1|5|Send|||||26|
+14|Tab|{Tab}|1|10|Send|||||29|
+15|Tab|{Tab}|1|10|Send|||||31|
+16|Tab|{Tab}|1|10|Send|||||33|
+17|n|{n}|1|0|Send|||||35|
+18|Play Sound, Continue, FoundX, FoundY, 0|-15, 260, 138, 320, \\VMDADOS\Setores\FUNCIONÁRIOS\Matheus\MACRO\Screenshots\aguarde.png|1|15|ImageSearch|UntilNotFound|Window|||36|
+19|[Pause]||1|20|Sleep|||||45|
+20|[Label]|livroBranco1|1|0|Label|||||46|
+21|Continue, Continue, FoundX, FoundY, 0|125, 55, 271, 116, \\VMDADOS\Setores\FUNCIONÁRIOS\Matheus\MACRO\Screenshots\livro.png|1|10|ImageSearch||Window|||47|
+22|If Image/Pixel Found||1|0|If_Statement|||||50|
+23|Down|{Down}|1|5|Send|||||52|
+24|[Goto]|livroBranco1|1|0|Goto|||||54|
+25|[End If]|EndIf|1|0|If_Statement|||||55|
+26|Evaluate Expression|Contador > 0|1|0|If_Statement|||||56|
+27|[LoopStart]|LoopStart|%Contador%|0|Loop|||||58|
+28|Down|{Down}|1|5|Send|||||60|
+29|[LoopEnd]|LoopEnd|1|0|Loop|||||62|
+30|[End If]|EndIf|1|0|If_Statement|||||63|
+31|Alt|{Alt Down}|1|5|Send|||||64|
+32|v|{v}|1|5|Send|||||66|
+33|Alt|{Alt Up}|1|5|Send|||||68|
+34|Play Sound, Continue, FoundX, FoundY, 0|-15, 260, 138, 320, \\VMDADOS\Setores\FUNCIONÁRIOS\Matheus\MACRO\Screenshots\aguarde.png|1|15|ImageSearch|UntilNotFound|Window|||70|
+35|Alt|{Alt Down}|1|5|Send|||||79|
+36|x|{x}|1|5|Send|||||81|
+37|Alt|{Alt Up}|1|5|Send|||||83|
+38|WinWaitActive||1|333|WinWaitActive||Exportação|||85|
+39|[Pause]||1|20|Sleep|||||87|
+40|Enter|{Enter}|1|5|Send|||||88|
+41|[LoopStart]|LoopStart|0|0|Loop|||||90|
+42|[Pause]||1|200|Sleep|||||92|
+43|If Window Active|ATENÇÃO|1|0|If_Statement|||||93|
+44|Enter|{Enter}|1|0|Send|||||95|
+45|[Pause]||1|500|Sleep|||||96|
+46|If Window Active|ATENÇÃO|1|0|If_Statement|||||97|
+47|Continue||1|0|Continue|||||99|
+48|[End If]|EndIf|1|0|If_Statement|||||100|
+49|Break||1|0|Break|||||101|
+50|[End If]|EndIf|1|0|If_Statement|||||102|
+51|If Window Active|Número do Livro ahk_class TFrmGetLivro|1|0|If_Statement|||||103|
+52|Enter|{Enter}|1|0|Send|||||105|
+53|[Pause]||1|500|Sleep|||||106|
+54|WinWaitNotActive|2|1|333|WinWaitNotActive||Número do Livro ahk_class TFrmGetLivro|||107|
+55|Continue||1|0|Continue|||||109|
+56|[End If]|EndIf|1|0|If_Statement|||||110|
+57|[LoopEnd]|LoopEnd|1|0|Loop|||||111|
+058|WinActivate||1|333|WinActivate||Natus|||112|
+059|WinMaximize||1|333|WinMaximize||Natus|||115|
+60|[Pause]||1|50|Sleep|||||117|
+61|Alt|{Alt}|1|5|Send|||||119|
+62|c|{c}|1|5|Send|||||121|
+63|e|{e}|1|5|Send|||||123|
+64|r|{r}|1|5|Send|||||125|
+65|c|{c}|1|5|Send|||||127|
+66|i|{i}|1|5|Send|||||129|
+67|WinWaitActive||1|333|WinWaitActive||Índice|||131|
+68|Space|{Space}|1|0|Send|||||133|
+69|e|{e}|1|5|Send|||||134|
+70|Tab|{Tab}|1|10|Send|||||136|
+71|Tab|{Tab}|1|10|Send|||||138|
+72|Tab|{Tab}|1|10|Send|||||140|
+73|n|{n}|1|0|Send|||||142|
+74|Play Sound, Continue, FoundX, FoundY, 0|-15, 260, 138, 320, \\VMDADOS\Setores\FUNCIONÁRIOS\Matheus\MACRO\Screenshots\aguarde.png|1|15|ImageSearch|UntilNotFound|Window|||143|
+75|[Pause]||1|20|Sleep|||||152|
+76|[Label]|LABEL2|1|0|Label|||||153|
+77|Continue, Continue, FoundX, FoundY, 0|125, 55, 271, 116, \\VMDADOS\Setores\FUNCIONÁRIOS\Matheus\MACRO\Screenshots\livro.png|1|10|ImageSearch||Window|||154|
+78|If Image/Pixel Found||1|0|If_Statement|||||157|
+79|Down|{Down}|1|5|Send|||||159|
+80|[Goto]|LABEL2|1|0|Goto|||||161|
+81|[End If]|EndIf|1|0|If_Statement|||||162|
+82|Evaluate Expression|Contador > 0|1|0|If_Statement|||||163|
+83|[LoopStart]|LoopStart|%Contador%|0|Loop|||||165|
+84|Down|{Down}|1|5|Send|||||167|
+85|[LoopEnd]|LoopEnd|1|0|Loop|||||169|
+86|[End If]|EndIf|1|0|If_Statement|||||170|
+87|[Add Variable]|Contador += 1|1|0|Variable|Expression||||171|
+88|IniWrite|%Contador%, C:\Users\Maquina 32\Desktop\nascimento.ini, Progresso, QtdAtual|1|0|IniWrite|||||172|
+89|Alt|{Alt Down}|1|5|Send|||||173|
+90|v|{v}|1|5|Send|||||175|
+91|Alt|{Alt Up}|1|5|Send|||||177|
+92|Play Sound, Continue, FoundX, FoundY, 0|-15, 260, 138, 320, \\VMDADOS\Setores\FUNCIONÁRIOS\Matheus\MACRO\Screenshots\aguarde.png|1|15|ImageSearch|UntilNotFound|Window|||179|
+93|Alt|{Alt Down}|1|5|Send|||||188|
+94|x|{x}|1|5|Send|||||190|
+95|Alt|{Alt Up}|1|5|Send|||||192|
+96|WinWaitActive||1|333|WinWaitActive||Exportação|||194|
+97|[Pause]||1|20|Sleep|||||196|
+98|Enter|{Enter}|1|5|Send|||||197|
+99|[LoopStart]|LoopStart|0|0|Loop|||||199|
+100|[Pause]||1|200|Sleep|||||201|
+101|If Window Active|ATENÇÃO|1|0|If_Statement|||||202|
+102|Enter|{Enter}|1|0|Send|||||204|
+103|[Pause]||1|500|Sleep|||||205|
+104|If Window Active|ATENÇÃO|1|0|If_Statement|||||206|
+105|Continue||1|0|Continue|||||208|
+106|[End If]|EndIf|1|0|If_Statement|||||209|
+107|Break||1|0|Break|||||210|
+108|[End If]|EndIf|1|0|If_Statement|||||211|
+109|If Window Active|Número do Livro ahk_class TFrmGetLivro|1|0|If_Statement|||||212|
+110|Enter|{Enter}|1|0|Send|||||214|
+111|[Pause]||1|500|Sleep|||||215|
+112|WinWaitNotActive|2|1|333|WinWaitNotActive||Número do Livro ahk_class TFrmGetLivro|||216|
+113|Continue||1|0|Continue|||||218|
+114|[End If]|EndIf|1|0|If_Statement|||||219|
+115|[LoopEnd]|LoopEnd|1|0|Loop|||||220|
+116|[Pause]||1|60000|Sleep|||||221|
+
+[PMC Code v5.4.1]|[||1|Window,2,Fast,0,1,Input,-1,-1,1|1|Macro2
+Context=None|
+Groups=Start:1
+1|WinActivate||1|333|WinActivate||Natus|||1|
+2|WinMaximize||1|333|WinMaximize||Natus|||3|
+3|WinActivate||1|333|WinActivate||Natus|||5|
+4|WinMaximize||1|333|WinMaximize||Natus|||7|
+
