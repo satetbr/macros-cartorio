@@ -1,4 +1,4 @@
-# Macros de averbação para o Natus
+# Macros para cartório
 
 Coleção de 5 macros para o **Natus** (software de cartório de registro civil) que automatizam a averbação de certidões. Na rotina real, o tempo por registro caiu de ~15 para ~4 minutos, economizando cerca de 8 horas de trabalho por dia da equipe.
 
